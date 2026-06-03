@@ -1,0 +1,51 @@
+/* 1. Modern Reset & Box Model */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Full-screen Centering & Background */
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  /* Modern font stack for a clean, tech-focused "Repo" look */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Subtle, sophisticated dark background */
+  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+  color: #f8fafc;
+  
+  /* Smooth text rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 3. Card styling for your content */
+p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  padding: 1.5rem 3rem;
+  
+  /* Glassmorphism effect */
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  
+  /* Micro-interaction on hover */
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+p:hover {
+  transform: translateY(-2px);
+  border-color: rgba(99, 102, 241, 0.4); /* Subtle purple glow */
+  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.15);
+}
